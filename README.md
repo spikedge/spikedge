@@ -6,15 +6,7 @@
 <br/><br/>
 
 <div align="center">
-
-<h1>SPIKEDGE</h1>
 <h3>Deterministic Embedded Software &amp; Edge AI Engineering</h3>
-
-<p>
-  <strong>Sub-microsecond EtherCAT Synchronization</strong><br/>
-  <strong>Hard Real-Time RTOS</strong> &nbsp;|&nbsp; <strong>Zero Jitter Guarantee</strong>
-</p>
-
 </div>
 
 <!-- ANIMATED TYPING TAGLINE -->
