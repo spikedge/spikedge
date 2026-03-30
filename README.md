@@ -2,13 +2,7 @@
 
 <!-- LOGO -->
 <img src="spikedge.png" alt="Spikedge" width="300" />
-
 <br/><br/>
-
-<div align="center">
-<h3>Deterministic Embedded Software &amp; Edge AI Engineering</h3>
-</div>
-
 <!-- ANIMATED TYPING TAGLINE -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3500&pause=1000&color=4FC3F7&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=Sub-microsecond+EtherCAT+Synchronization;Hard+Real-Time+RTOS+%7C+Zero+Jitter+Guarantee;Edge+AI+at+127+fps+on+Jetson+Orin+NX;%E2%88%9290%25+Boot+Time+Optimization+%7C+1.8s+Cold+Boot" />
