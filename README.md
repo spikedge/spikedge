@@ -224,6 +224,7 @@ flowchart LR
     H --> J
     H --> K
 ---
+---
 
 ## Technology Stack
 
