@@ -172,6 +172,23 @@ Purpose-built for agricultural automation, infrastructure monitoring, and indust
 ## System Architecture: Edge AI Pipeline
 
 ```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#0F172A",
+    "primaryTextColor": "#F8FAFC",
+    "primaryBorderColor": "#1E3A8A",
+    "lineColor": "#38BDF8",
+    "secondaryColor": "#0E4C8A",
+    "tertiaryColor": "#020617",
+    "background": "#020617",
+    "mainBkg": "#0F172A",
+    "secondBkg": "#1E293B",
+    "edgeLabelBackground":"#020617",
+    "fontFamily": "JetBrains Mono"
+  }
+}}%%
+
 flowchart LR
     subgraph INPUT["Input Layer"]
         A["Industrial Cameras\n1080p @ 60fps"]
@@ -180,20 +197,20 @@ flowchart LR
     end
 
     subgraph FUSION["Sensor Fusion"]
-        D["Hardware\nTimestamp Alignment"]
-        E["Kalman Filter\nState Estimator"]
+        D["Timestamp Alignment"]
+        E["Kalman Filter"]
     end
 
     subgraph INFERENCE["Edge AI Inference"]
-        F["TensorRT Engine\nINT8 Quantized"]
-        G["CUDA Graphs\nZero-Copy Pipeline"]
-        H["DLA Co-Execution\n8.4W @ 127fps"]
+        F["TensorRT INT8"]
+        G["CUDA Graph Pipeline"]
+        H["DLA Co-Execution\n127 fps"]
     end
 
-    subgraph OUTPUT["Output Layer"]
-        I["Real-Time\nControl Signal"]
-        J["Encrypted\nTelemetry Stream"]
-        K["Local\nAudit Log"]
+    subgraph OUTPUT["Output"]
+        I["Real-Time Control"]
+        J["Encrypted Telemetry"]
+        K["Audit Log"]
     end
 
     A --> D
@@ -206,8 +223,6 @@ flowchart LR
     H --> I
     H --> J
     H --> K
-```
-
 ---
 
 ## Technology Stack
