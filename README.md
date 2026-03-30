@@ -246,6 +246,83 @@ flowchart LR
     style INFERENCE fill:#ffffff,stroke:#CBD5E1,stroke-width:1px,color:#334155
     style OUTPUT fill:#ffffff,stroke:#CBD5E1,stroke-width:1px,color:#334155
 ```
+
+## System Architecture: Edge AI Pipeline
+
+```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "background": "#ffffff",
+    "primaryColor": "#0F172A",
+    "primaryTextColor": "#F8FAFC",
+    "primaryBorderColor": "#1E3A8A",
+    "lineColor": "#0EA5E9",
+    "secondaryColor": "#ffffff",
+    "tertiaryColor": "#ffffff",
+    "edgeLabelBackground": "#ffffff",
+    "fontFamily": "Arial"
+  }
+}}%%
+
+flowchart LR
+
+    subgraph INPUT["Input"]
+        A["Camera"]
+        B["LiDAR"]
+        C["IMU"]
+    end
+
+    subgraph FUSION["Fusion"]
+        D["Time Align"]
+        E["Kalman"]
+    end
+
+    subgraph AI["Inference"]
+        F["TensorRT"]
+        G["CUDA"]
+        H["DLA (127fps)"]
+    end
+
+    subgraph OUTPUT["Output"]
+        I["Control"]
+        J["Telemetry"]
+        K["Logs"]
+    end
+
+    A --> D
+    B --> D
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    H --> J
+    H --> K
+
+    %% Node styling (MIDNIGHT)
+    style A fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+    style B fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+    style C fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+
+    style D fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+    style E fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+
+    style F fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+    style G fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+    style H fill:#0369A1,color:#ffffff,stroke:#1E3A8A
+
+    style I fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+    style J fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+    style K fill:#0F172A,color:#F8FAFC,stroke:#1E3A8A
+
+    %% Subgraph clean look
+    style INPUT fill:#ffffff,stroke:#E2E8F0
+    style FUSION fill:#ffffff,stroke:#E2E8F0
+    style AI fill:#ffffff,stroke:#E2E8F0
+    style OUTPUT fill:#ffffff,stroke:#E2E8F0
+```
 ---
 
 ## Technology Stack
