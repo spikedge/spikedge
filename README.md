@@ -1,13 +1,11 @@
 <div align="center">
 
 <!-- LOGO -->
-<img src="spikedge.png" alt="Spikedge" width="120" />
+<img src="spikedge.png" alt="Spikedge" width="300" />
 
 <br/><br/>
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0A0F1E,0D1B3E,0E4C8A,1565C0,1976D2&height=260&section=header&text=SPIKEDGE&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Deterministic%20Embedded%20Software%20%26%20Edge%20AI%20Engineering&descSize=20&descAlignY=65&descColor=90CAF9" />
-</div>
+![banner](https://capsule-render.vercel.app/api?type=waving&color=0A0F1E,0D1B3E,0E4C8A,1565C0,1976D2&height=260&section=header&text=SPIKEDGE&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Deterministic%20Embedded%20Software%20%26%20Edge%20AI%20Engineering&descSize=20&descAlignY=65&descColor=90CAF9)
 
 <!-- ANIMATED TYPING TAGLINE -->
 <picture>
