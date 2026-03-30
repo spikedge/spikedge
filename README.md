@@ -175,23 +175,25 @@ Purpose-built for agricultural automation, infrastructure monitoring, and indust
 %%{init: {
   "theme": "base",
   "themeVariables": {
+    "background": "#ffffff",
     "primaryColor": "#0F172A",
     "primaryTextColor": "#F8FAFC",
     "primaryBorderColor": "#1E3A8A",
-    "lineColor": "#38BDF8",
-    "secondaryColor": "#0E4C8A",
-    "tertiaryColor": "#020617",
-    "background": "#020617",
-    "mainBkg": "#0F172A",
-    "secondBkg": "#1E293B",
-    "edgeLabelBackground":"#020617",
-    "fontFamily": "JetBrains Mono"
+    "secondaryColor": "#ffffff",
+    "secondaryTextColor": "#0F172A",
+    "secondaryBorderColor": "#CBD5E1",
+    "tertiaryColor": "#ffffff",
+    "tertiaryTextColor": "#0F172A",
+    "tertiaryBorderColor": "#CBD5E1",
+    "lineColor": "#0EA5E9",
+    "edgeLabelBackground": "#ffffff",
+    "fontFamily": "Arial"
   }
 }}%%
 
 flowchart LR
     subgraph INPUT["Input Layer"]
-        A["Industrial Cameras\n1080p @ 60fps"]
+        A["Industrial Cameras<br/>1080p @ 60fps"]
         B["LiDAR / ToF Sensors"]
         C["IMU / GNSS"]
     end
@@ -204,7 +206,7 @@ flowchart LR
     subgraph INFERENCE["Edge AI Inference"]
         F["TensorRT INT8"]
         G["CUDA Graph Pipeline"]
-        H["DLA Co-Execution\n127 fps"]
+        H["DLA Co-Execution<br/>127 fps"]
     end
 
     subgraph OUTPUT["Output"]
@@ -223,6 +225,26 @@ flowchart LR
     H --> I
     H --> J
     H --> K
+
+    style A fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+    style B fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+    style C fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+
+    style D fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+    style E fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+
+    style F fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+    style G fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+    style H fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+
+    style I fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+    style J fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+    style K fill:#0F172A,stroke:#1E3A8A,stroke-width:1.5px,color:#F8FAFC
+
+    style INPUT fill:#ffffff,stroke:#CBD5E1,stroke-width:1px,color:#334155
+    style FUSION fill:#ffffff,stroke:#CBD5E1,stroke-width:1px,color:#334155
+    style INFERENCE fill:#ffffff,stroke:#CBD5E1,stroke-width:1px,color:#334155
+    style OUTPUT fill:#ffffff,stroke:#CBD5E1,stroke-width:1px,color:#334155
 ```
 ---
 
