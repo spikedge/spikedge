@@ -5,7 +5,17 @@
 
 <br/><br/>
 
-![banner](https://capsule-render.vercel.app/api?type=waving&color=0A0F1E,0D1B3E,0E4C8A,1565C0,1976D2&height=260&section=header&text=SPIKEDGE&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Deterministic%20Embedded%20Software%20%26%20Edge%20AI%20Engineering&descSize=20&descAlignY=65&descColor=90CAF9)
+<div align="center">
+
+<h1>SPIKEDGE</h1>
+<h3>Deterministic Embedded Software &amp; Edge AI Engineering</h3>
+
+<p>
+  <strong>Sub-microsecond EtherCAT Synchronization</strong><br/>
+  <strong>Hard Real-Time RTOS</strong> &nbsp;|&nbsp; <strong>Zero Jitter Guarantee</strong>
+</p>
+
+</div>
 
 <!-- ANIMATED TYPING TAGLINE -->
 <picture>
