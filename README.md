@@ -388,9 +388,9 @@ If your platform demands deterministic real-time behavior, sub-microsecond preci
 
 <br/>
 
-[![Schedule a Discovery Session](https://img.shields.io/badge/Schedule%20a%20Discovery%20Session-0D47A1?style=for-the-badge&logo=googlemeet&logoColor=white)](https://spikedge.com/contact)
+[![Schedule a Discovery Session](https://img.shields.io/badge/Schedule%20a%20Discovery%20Session-0D47A1?style=for-the-badge&logo=googlemeet&logoColor=white)](https://spikedge.com/iletisim)
 &nbsp;
-[![Request NDA Draft](https://img.shields.io/badge/Request%20NDA%20Draft-1565C0?style=for-the-badge&logo=googledocs&logoColor=white)](https://spikedge.com/contact)
+[![Request NDA Draft](https://img.shields.io/badge/Request%20NDA%20Draft-1565C0?style=for-the-badge&logo=googledocs&logoColor=white)](https://spikedge.com/iletisim)
 &nbsp;
 [![Download Whitepaper](https://img.shields.io/badge/Download%20Whitepaper%20PDF-1976D2?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://spikedge.com)
 
